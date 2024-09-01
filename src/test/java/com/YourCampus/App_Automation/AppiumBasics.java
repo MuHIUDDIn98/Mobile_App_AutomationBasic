@@ -24,9 +24,9 @@ public class AppiumBasics {
 		
 		//android emulator start automation
 		
-		String emulatorPath = "C:\\Users\\Anik\\AppData\\Local\\Android\\Sdk\\emulator\\emulator.exe";
-		String avdName = "Pixel_8_Pro_API_33";
-		String mainJsPath ="C:\\Users\\Anik\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js";
+		String emulatorPath = "C:\\Users\\Onick\\AppData\\Local\\Android\\Sdk\\emulator\\emulator.exe";
+		String avdName = "Pixel_7_Pro_API_34";
+		String mainJsPath ="C:\\Users\\Onick\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js";
 		String AppiumServerIP = "127.0.0.1";
 		int AppiumPort = 4723;
 //		try {
@@ -60,7 +60,7 @@ public class AppiumBasics {
 		//UiAutomation options selection
 		UiAutomator2Options options = new UiAutomator2Options();
 		//setting uiautomator capabilities options
-		options.setDeviceName("Pixel_8_Pro_API_33");
+		options.setDeviceName("Pixel_7_Pro_API_34");
 		String appPath =System.getProperty("user.dir") + File.separator + "src" + File.separator + "test"
                 + File.separator+"java" + File.separator + "ResouscesApk"+File.separator+"YourCampus_2024_08_28_V1.apk";
 		

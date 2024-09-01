@@ -20,14 +20,19 @@ import java.time.Duration;
 	    
 	    @Test
 	    public void TestyourCampusAPK() throws MalformedURLException {
+	    	
+	    	
+	    	
+	    	
+	    	
 	        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 	        desiredCapabilities.setCapability("platformName", "android");
 	        desiredCapabilities.setCapability("appium:automationName","UiAutomator2");
-	        desiredCapabilities.setCapability("appium:deviceName","Pixel_8_Pro_API_33");
+	        desiredCapabilities.setCapability("appium:deviceName","Pixel_7_Pro_API_34");
 	        desiredCapabilities.setCapability("appium:udid","emulator-5554");
 	        
 	        //for emulator laoumch through appium
-	        desiredCapabilities.setCapability("appium:avd", "Pixel_8_Pro_API_33");
+	        desiredCapabilities.setCapability("appium:avd", "Pixel_7_Pro_API_34");
 	        desiredCapabilities.setCapability("appium:avdLaunchTimeout", 18000);
 	        desiredCapabilities.setCapability("appium:appPackage","com.mnt.your_campus");
 	        desiredCapabilities.setCapability("appium:appActivity","com.mnt.your_campus.MainActivity");

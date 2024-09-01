@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.YourCampus.App_Automation.AppiumBasics">
+      <class name="ConnectWithDesiredCapabilities.LoginPageDesiredCapabilities">
         <methods>
-          <include name="AppiumTest"/>
+          <include name="TestyourCampusAPK"/>
         </methods>
-      </class> <!-- com.YourCampus.App_Automation.AppiumBasics -->
+      </class> <!-- ConnectWithDesiredCapabilities.LoginPageDesiredCapabilities -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

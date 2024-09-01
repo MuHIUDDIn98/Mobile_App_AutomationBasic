@@ -14,7 +14,7 @@ public class CreateDriverSessionUsingOptions {
 	@Test
 	public void AppTestOn() throws MalformedURLException {
 		UiAutomator2Options options = new UiAutomator2Options();
-		options.setDeviceName("Pixel_8_Pro_API_33");
+		options.setDeviceName("Pixel_7_Pro_API_34");
 		
 //		String appPath =System.getProperty("user.dir") + File.separator + "src" + File.separator + "test"
 //                + File.separator+"java" + File.separator + "ResouscesApk"+File.separator+"YourCampus_2024_08_28_V1.apk";
