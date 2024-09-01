@@ -13,7 +13,7 @@ public class Testexecution extends BaseTestServices{
 		startServer();
 		
 		SetDesiredCapabilitiesDriver();
-//		UiAutomator2SetOptionsDriver();
+		//UiAutomator2SetOptionsDriver();
 		StopServer();
 	
 		

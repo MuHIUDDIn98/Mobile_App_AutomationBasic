@@ -24,6 +24,8 @@ public class BaseTestServices {
 	static String EMULATOR_PATH = "C:\\Users\\Onick\\AppData\\Local\\Android\\Sdk\\emulator\\emulator.exe"; // Update this path
     static String AVD_NAME = ""; // Update this to your AVD name
 	int AppiumPort = 4723;
+	String appPath =System.getProperty("user.dir") + File.separator + "src" + File.separator + "test"
+            + File.separator+"java" + File.separator + "ResouscesApk"+File.separator+"YourCampus_2024_08_28_V1.apk";
 	
 	public AndroidDriver driver;
 	
@@ -32,8 +34,9 @@ public class BaseTestServices {
 	
 	public  void startServer() {
 		 service = new AppiumServiceBuilder().withAppiumJS(new File(mainJsPath)).withIPAddress(AppiumServerIP).usingPort(AppiumPort).build();
-		
+		 
 		 service.start();
+		 System.out.println("Appium server started");
 		
 		
 		
@@ -45,13 +48,13 @@ public class BaseTestServices {
 				UiAutomator2Options options = new UiAutomator2Options();
 				//setting uiautomator capabilities options
 				options.setDeviceName(avdName);
-				String appPath =System.getProperty("user.dir") + File.separator + "src" + File.separator + "test"
-		                + File.separator+"java" + File.separator + "ResouscesApk"+File.separator+"YourCampus_2024_08_28_V1.apk";
+//				String appPath =System.getProperty("user.dir") + File.separator + "src" + File.separator + "test"
+//		                + File.separator+"java" + File.separator + "ResouscesApk"+File.separator+"YourCampus_2024_08_28_V1.apk";
 				
 				//String appPath = "E:\\java_web_automation_scripts\\Mobile_Automation_Basics_with_java\\src\\test\\java\\ResouscesApk\\YourCampus_2024_08_28_V1.apk";
 				
 				
-				options.setApp(appPath);
+//				options.setApp(appPath);
 				
 				System.out.println(appPath);
 				
@@ -69,10 +72,10 @@ public class BaseTestServices {
         desiredCapabilities.setCapability("appium:automationName","UiAutomator2");
         desiredCapabilities.setCapability("appium:deviceName","Pixel_7_Pro_API_34");
         desiredCapabilities.setCapability("appium:udid","emulator-5554");
-        
+        desiredCapabilities.setCapability("appium:app", appPath);
         //for emulator launch through appium
         desiredCapabilities.setCapability("appium:avd", "Pixel_7_Pro_API_34");
-        desiredCapabilities.setCapability("appium:avdLaunchTimeout", 18000);
+        desiredCapabilities.setCapability("appium:avdLaunchTimeout", 24000);
         desiredCapabilities.setCapability("appium:appPackage","com.mnt.your_campus");
         desiredCapabilities.setCapability("appium:appActivity","com.mnt.your_campus.MainActivity");
         
@@ -87,7 +90,9 @@ public class BaseTestServices {
 	public void StopServer() {
 		
 		driver.quit();
+		System.out.println("android driver Quit");
 		service.stop();
+		System.out.println("Appium server stop");
 	}
 	
 	
