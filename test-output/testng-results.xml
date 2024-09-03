@@ -2,16 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-01T23:58:10Z" name="Default suite" finished-at="2024-09-01T23:58:24Z" duration-ms="14392">
+  <suite started-at="2024-09-03T01:19:46Z" name="Default suite" finished-at="2024-09-03T01:20:09Z" duration-ms="23089">
     <groups>
     </groups>
-    <test started-at="2024-09-01T23:58:10Z" name="Default test" finished-at="2024-09-01T23:58:24Z" duration-ms="14392">
-      <class name="com.YourCampus.App_Automation.Testexecution">
-        <test-method signature="startAppiumServer()[pri:0, instance:com.YourCampus.App_Automation.Testexecution@12359a82]" started-at="2024-09-02T05:58:10Z" name="startAppiumServer" finished-at="2024-09-02T05:58:24Z" duration-ms="14381" status="PASS">
+    <test started-at="2024-09-03T01:19:46Z" name="Default test" finished-at="2024-09-03T01:20:09Z" duration-ms="23089">
+      <class name="Locators.Testexecution">
+        <test-method is-config="true" signature="StartAppiumServerAndOptionClass()[pri:0, instance:Locators.Testexecution@62010f5c]" started-at="2024-09-03T07:19:46Z" name="StartAppiumServerAndOptionClass" finished-at="2024-09-03T07:20:01Z" duration-ms="15039" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startAppiumServer -->
-      </class> <!-- com.YourCampus.App_Automation.Testexecution -->
+        </test-method> <!-- StartAppiumServerAndOptionClass -->
+        <test-method signature="StartTest()[pri:0, instance:Locators.Testexecution@62010f5c]" started-at="2024-09-03T07:20:01Z" name="StartTest" finished-at="2024-09-03T07:20:09Z" duration-ms="7768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method is-config="true" signature="StopServerAndDriver()[pri:0, instance:Locators.Testexecution@62010f5c]" started-at="2024-09-03T07:20:09Z" name="StopServerAndDriver" finished-at="2024-09-03T07:20:09Z" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StopServerAndDriver -->
+      </class> <!-- Locators.Testexecution -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

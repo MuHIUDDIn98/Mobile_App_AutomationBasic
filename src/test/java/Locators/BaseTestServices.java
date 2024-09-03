@@ -1,4 +1,4 @@
-package com.YourCampus.App_Automation;
+package Locators;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -60,6 +61,8 @@ public class BaseTestServices {
 				//AndroidDriver
 			
 				driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
+				//driver element get timeout
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
 	

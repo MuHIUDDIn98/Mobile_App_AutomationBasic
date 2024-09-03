@@ -1,21 +1,13 @@
 package com.YourCampus.App_Automation;
 
-import java.io.IOException;
-
 import org.testng.annotations.Test;
 
-public class Testexecution extends BaseTestServices{
+public class Testexecution extends BaseTest{
 	
 	
 	@Test
-	public void startAppiumServer() throws IOException, InterruptedException {
+	public void StartTest() {
 		
-		startServer();
-		
-		SetDesiredCapabilitiesDriver();
-		//UiAutomator2SetOptionsDriver();
-		StopServer();
-	
 		
 	}
 
