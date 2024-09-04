@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="Locators.Testexecution">
+      <class name="GesturesAutomation.dragNdropGestures">
         <methods>
-          <include name="StartAppiumServerAndOptionClass"/>
-          <include name="StartTest"/>
+          <include name="drapDropTest"/>
           <include name="StopServerAndDriver"/>
+          <include name="StartAppiumServerAndOptionClass"/>
         </methods>
-      </class> <!-- Locators.Testexecution -->
+      </class> <!-- GesturesAutomation.dragNdropGestures -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
