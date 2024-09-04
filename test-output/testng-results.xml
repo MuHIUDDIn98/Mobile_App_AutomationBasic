@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-04T08:27:09Z" name="Default suite" finished-at="2024-09-04T08:27:30Z" duration-ms="20693">
+  <suite started-at="2024-09-04T12:49:38Z" name="Default suite" finished-at="2024-09-04T12:50:06Z" duration-ms="27689">
     <groups>
     </groups>
-    <test started-at="2024-09-04T08:27:09Z" name="Default test" finished-at="2024-09-04T08:27:30Z" duration-ms="20693">
-      <class name="GesturesAutomation.dragNdropGestures">
-        <test-method is-config="true" signature="StartAppiumServerAndOptionClass()[pri:0, instance:GesturesAutomation.dragNdropGestures@63f259c3]" started-at="2024-09-04T14:27:09Z" name="StartAppiumServerAndOptionClass" finished-at="2024-09-04T14:27:24Z" duration-ms="14840" status="PASS">
+    <test started-at="2024-09-04T12:49:38Z" name="Default test" finished-at="2024-09-04T12:50:06Z" duration-ms="27689">
+      <class name="MiscellaneousActivity.KeyEvents">
+        <test-method is-config="true" signature="StartAppiumServerAndOptionClass()[pri:0, instance:MiscellaneousActivity.KeyEvents@63f259c3]" started-at="2024-09-04T18:49:39Z" name="StartAppiumServerAndOptionClass" finished-at="2024-09-04T18:49:54Z" duration-ms="15901" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartAppiumServerAndOptionClass -->
-        <test-method signature="drapDropTest()[pri:0, instance:GesturesAutomation.dragNdropGestures@63f259c3]" started-at="2024-09-04T14:27:24Z" name="drapDropTest" finished-at="2024-09-04T14:27:30Z" duration-ms="5508" status="PASS">
+        <test-method signature="keyEventTest()[pri:0, instance:MiscellaneousActivity.KeyEvents@63f259c3]" started-at="2024-09-04T18:49:54Z" name="keyEventTest" finished-at="2024-09-04T18:50:06Z" duration-ms="11366" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- drapDropTest -->
-        <test-method is-config="true" signature="StopServerAndDriver()[pri:0, instance:GesturesAutomation.dragNdropGestures@63f259c3]" started-at="2024-09-04T14:27:30Z" name="StopServerAndDriver" finished-at="2024-09-04T14:27:30Z" duration-ms="333" status="PASS">
+        </test-method> <!-- keyEventTest -->
+        <test-method is-config="true" signature="StopServerAndDriver()[pri:0, instance:MiscellaneousActivity.KeyEvents@63f259c3]" started-at="2024-09-04T18:50:06Z" name="StopServerAndDriver" finished-at="2024-09-04T18:50:06Z" duration-ms="408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StopServerAndDriver -->
-      </class> <!-- GesturesAutomation.dragNdropGestures -->
+      </class> <!-- MiscellaneousActivity.KeyEvents -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
